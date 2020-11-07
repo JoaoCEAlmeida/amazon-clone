@@ -3,9 +3,14 @@ import Header from "./Header";
 import Home from "./Home";
 import Checkout from "./Checkout";
 import Login from "./Login";
+import Payment from "./Payment";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { auth } from "./firebase";
 import { useStateValue } from "./store/StateProvider";
+
+import ReactNotification from "react-notifications-component";
+import "react-notifications-component/dist/theme.css";
 import "./App.css";
 
 const App = () => {
@@ -29,7 +34,13 @@ const App = () => {
   return (
     <Router>
       <div className="app">
+        <ReactNotification />
+
         <Switch>
+          <Route path="/payment">
+            <Header />
+            <Payment />
+          </Route>
           <Route path="/login">
             <Login />
           </Route>

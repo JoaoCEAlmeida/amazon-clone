@@ -2,6 +2,7 @@ import React from "react";
 import "./index.css";
 import StarIcon from "@material-ui/icons/Star";
 import { useStateValue } from "../store/StateProvider";
+import { store } from "react-notifications-component";
 
 const Product = ({ id, title, image, price, rating }) => {
   const [{ basket }, dispatch] = useStateValue();
@@ -15,6 +16,17 @@ const Product = ({ id, title, image, price, rating }) => {
         image: image,
         price: price,
         rating: rating,
+      },
+    });
+
+    store.addNotification({
+      title: title,
+      message: "Successfuly added",
+      type: "success",
+      insert: "top",
+      container: "top-right",
+      dismiss: {
+        duration: 250,
       },
     });
   };
