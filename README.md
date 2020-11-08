@@ -1,3 +1,3 @@
 # amazon-clone
 
-Available at: https://clone-eaea5.web.app/
+Available at: https://clone-e3e01.web.app/
