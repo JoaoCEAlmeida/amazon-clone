@@ -14,7 +14,7 @@
 }
 
 .product:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   -webkit-box-shadow: -1px 2px 15px -2px #000000;
   box-shadow: -1px 2px 15px -2px #000000;
 }
