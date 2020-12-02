@@ -1,3 +1,9 @@
+@media screen and (max-width: 500px) {
+  .payment__section {
+    flex-direction: column !important;
+  }
+}
+
 .payment {
   background-color: white;
 }

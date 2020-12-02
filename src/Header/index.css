@@ -1,3 +1,15 @@
+@media screen and (max-width: 500px) {
+  .header__logo {
+    width: 70px !important;
+    margin: 0 5px !important;
+    margin-top: 5px !important;
+  }
+
+  .header__search {
+    display: none !important;
+  }
+}
+
 .header {
   height: 60px;
   display: flex;

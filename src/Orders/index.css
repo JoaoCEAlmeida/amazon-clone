@@ -1,3 +1,9 @@
+@media screen and (max-width: 500px) {
+  .orders {
+    padding: 10px 20px !important;
+  }
+}
+
 .orders {
   padding: 20px 80px;
 }

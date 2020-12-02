@@ -1,3 +1,20 @@
+@media screen and (max-width: 500px) {
+  .checkoutProduct {
+    flex-direction: column !important;
+  }
+  .checkoutProduct__image {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .checkoutProduct__title {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+  }
+  .checkoutProduct__info {
+    padding-left: 5px !important;
+  }
+}
+
 .checkoutProduct {
   display: flex;
   margin-top: 20px;
